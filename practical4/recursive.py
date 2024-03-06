@@ -7,4 +7,4 @@ for i in range (1,6):
  print(a)
  a=2*a+3
 # if i write "a=2*a+3" before "print(a)"
-# i will get the next 5 nunber after 4
+# i will get the next 5 nunber after "4"
