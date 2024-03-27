@@ -1,0 +1,3 @@
+1, How has the DALYs changed in the UK over time? Note the “Entity” for the UK is ’United Kingdom’ and the “Code” is GBR (Great Britain).
+
+2, Plot a boxplot of DALYs across countries in 2019
