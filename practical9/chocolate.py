@@ -6,7 +6,7 @@ def chocolate_bar(money):
     return pieces,left
 class chocolatebars:
     def __init__(self, pieces, left):
-        self.pieces = pieces #align the value of "pieces" calculated in advance to the instance variable "pieces"
+        self.pieces = pieces # assign the value of "pieces" calculated in advance to the instance variable "pieces"
         self.left = left# same as the upper line
 
     def print(self):
