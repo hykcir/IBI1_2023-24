@@ -7,7 +7,7 @@ beta = 0.3  # Infection probability
 gamma = 0.05  # Recovery rate
 
 # Initialize random outbreak
-outbreak = np.random.randint(0, 100, size=2)
+outbreak = np.random.choice(range(100), 2)
 population[outbreak[0], outbreak[1]] = 1
 
 # Function to infect neighbors
