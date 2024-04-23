@@ -16,3 +16,7 @@ print (X ^ Y) #learn this command from a friend
 #if x and y are same (true or false), then print false
 #if x and y are not same, then print true.
 # true
+# truth table: X:True,Y:False: either X or Y: True
+#              X:True,Y:True: either X or Y: False
+#              X:False,Y:False: either X or Y: False
+#              X:False,Y:True: either X or Y: True
