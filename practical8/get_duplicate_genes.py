@@ -4,7 +4,7 @@ with open('/Users/rickyh/Desktop/Saccharomyces_cerevisiae.R64-1-1.cdna.all.fa') 
             for line in infile:
                 if line.startswith('>'):
                     if 'duplication' in line:
-                        gene_name = line.strip()[1:].split()[0] #extract only thr gene names
+                        gene_name = line.strip()[1:].split()[0] #extract only the gene names
                         outfile.write(">" + gene_name + "\n")
                         duplicate_gene= True 
                     else:
