@@ -14,6 +14,8 @@ plt.ylabel('size')
 cn_cities={'Haining':0.58,'Hangzhou':8.4,'Shanghai':29.9,'Beijing':22.2}
 labels=list(cn_cities.keys())
 values=list(cn_cities.values())
+print("Uk's cities' sizes:",uk_cities)
+print("Chinese cities' sizes:",cn_cities)
 plt.subplot(1,2,2)
 plt.bar(labels,values)
 plt.title('The size of china cities')
