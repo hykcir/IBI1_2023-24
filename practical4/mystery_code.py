@@ -1,5 +1,6 @@
 # What does this piece of code do?
-# Answer: the code generate 99 random numbers range from 1 to 10 and then add all of them up together with the first "0"
+# Answer: sum of 100 randomly generated numbers between 1 and 10
+
 
 # Import libraries
 # randint allows drawing a random number,
