@@ -1,17 +1,20 @@
-#import re
-#def repeat(seq,pattern):
-#    return len(re.findall(seq,pattern))
-
-def repeat(seq,pattern):
-    count=0
-    count+=1
-    return count
+import re
 seq='ATGCAATCGGTGTGTCTGTTCTGAGAGGGCCTAA'
-pattern1='GTGTGT'
-pattern2='GTCTGT'
-count1=repeat(seq,pattern1)
-count2=repeat(seq,pattern2)
-total=count1+count2
-print("The total number of repeated elements is",total)
+total_count=0
+# Count occurrences of 'GTGTGT' using lookahead for overlapping matches
+count1=len(re.findall('(?=(GTGTGT))',seq))
+# Count occurrences of 'GTCTGT' using lookahead for overlapping matches
+count2=len(re.findall('(?=(GTCTGT))',seq))
+total_count=count1+count2
+print("The total number of repeat elements in the equence:",total_count)
+
+
+
+
+
+
+
+
+
 
 
