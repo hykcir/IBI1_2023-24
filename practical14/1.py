@@ -62,11 +62,13 @@ class GOhandler(xml.sax.ContentHandler):
         if self.currentdata == 'namespace':
             ontology_name = self.namespace.strip()
             #  update 'ontology_dict' and count the occurance of the different 'namespace's
-            ontology_dict[ontology_name] += 1
-        else:
-            ontology_dict[ontology_name] = 1
+            if ontology_name in ontology_dict:
+                ontology_dict[ontology_name] += 1
+            else:
+                ontology_dict[ontology_name] = 1
             # reset the 'self.namespace' to an empty string in case it carry the previous data to the next namspace 
-            self.namespace=''
+        self.namespace=''
+
     # find and accumulate the content of the element : 'namespace'
     def characters(self, content):
         if self.currentdata == 'namespace':
